@@ -22,12 +22,12 @@ args = "Start application"
 name = "Start application"
 author = "agent"
 
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "python turtle-main.py"
-
 [workflows.workflow.metadata]
 outputType = "vnc"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "DISPLAY=:1 python turtle-main.py"
 
 [[workflows.workflow]]
 name = "Example 1 p 25"
