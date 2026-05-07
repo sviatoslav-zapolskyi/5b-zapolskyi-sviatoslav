@@ -7,7 +7,7 @@ stack = "BEST_EFFORT_FALLBACK"
 channel = "stable-25_05"
 
 [workflows]
-runButton = "Start application"
+runButton = "Вправа 24"
 
 [[workflows.workflow]]
 name = "Project"
@@ -37,3 +37,39 @@ author = 49527123
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "python example25.1.py"
+
+[[workflows.workflow]]
+name = "Параграф 24 приклад 1"
+mode = "sequential"
+author = 49527123
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python example24.1.py"
+
+[[workflows.workflow]]
+name = "Параграф 24 приклад 2"
+mode = "sequential"
+author = 49527123
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python example24.2.py"
+
+[[workflows.workflow]]
+name = "Параграф 24 приклад 3"
+mode = "sequential"
+author = 49527123
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python example24.3.py"
+
+[[workflows.workflow]]
+name = "Вправа 24"
+mode = "sequential"
+author = 49527123
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python exercise24.py"
